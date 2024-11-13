@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Gestión de Productos</title>
+</head>
+<body>
+
+    <div class="container my-5">
+        <!-- Formulario de Inserción -->
+        <h2 class="mb-4">Añadir Producto</h2>
+        <form id="insert-form" class="row g-3 mb-5">
+            <div class="col-md-6">
+                <label for="product_name" class="form-label">Nombre del Producto</label>
+                <input type="text" class="form-control" id="product_name" placeholder="Ingrese el nombre del producto" required>
+            </div>
+            <div class="col-md-6">
+                <label for="product_price" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="product_price" placeholder="Ingrese el precio" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
+            </div>
+        </form>
+
+        <!-- Tabla de Productos -->
+        <h2 class="mb-4">Lista de Productos</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="tableContainer">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="js/app.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="-1/4 flex flex-col justify-center">
+    <form class="border rounded w-1/4 flex flex-col justify-center" action="results.html">
+        <div class="m-5">
+            <label for="name">url: </label>
+            <input class="border rounded" type="text" id="api_url" name="url" placeholder="url" size="40" maxlength="40" required/>
+        </div>
+        <div class="m-5">
+            <label for="name">todos: </label>
+            <input class="border rounded" type="text" id="all" name="all" placeholder="Obtener todos" size="40" maxlength="40"/>
+        </div>
+        <div class="m-5">
+            <label for="name">insertar: </label>
+            <input class="border rounded" type="text" id="insertar" name="insertar" placeholder="insertar" size="40" maxlength="40"/>
+        </div>
+        <div class="m-5">
+            <label for="name">editar: </label>
+            <input class="border rounded" type="text" id="editar" name="editar" placeholder="editar" size="40" maxlength="40"/>
+        </div>
+        <div class="m-5">
+            <label for="name">eliminar: </label>
+            <input class="border rounded" type="text" id="eliminar" name="eliminar" placeholder="eliminar" size="40" maxlength="40"/>
+        </div>
+        <input class="border rounded" type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
